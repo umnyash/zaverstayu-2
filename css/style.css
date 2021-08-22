@@ -100,10 +100,12 @@
   background-color: var(--dark-text-color);
 }
 
-.promo .section-title {
+.promo-title {
+  font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 44px;
   line-height: 58.65px;
   font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 .purchase-instruction-list {
