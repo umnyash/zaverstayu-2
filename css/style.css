@@ -54,6 +54,7 @@
 
 .section-title,
 .product-categories-name {
+  text-align: center;
   font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 36px;
   line-height: 48px;
@@ -118,6 +119,10 @@
 
 .purchase-instruction-name {
   font-weight: 500;
+}
+
+.follow-us .section-title {
+  text-align: left;
 }
 
 .social-list {
