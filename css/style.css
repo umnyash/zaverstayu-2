@@ -93,3 +93,8 @@
   color: var(--light-text-color);
   background-color: var(--dark-text-color);
 }
+
+.promo {
+  color: var(--light-text-color);
+  background-color: var(--dark-text-color);
+}
