@@ -145,12 +145,18 @@
   font-style: normal;
 }
 
+.main-footer {
+  color: var(--light-text-color);
+  background-color: var(--dark-text-color);
+}
+
 .contacts .section-title {
   text-align: left;
   letter-spacing: normal;
 }
 
 .contacts-info {
+  color: var(--dark-text-color);
   background-color: var(--contacts-info-bg-color);
 }
 
