@@ -51,6 +51,13 @@
   font-style: italic;
 }
 
+.section-title {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+}
+
 .button {
   font-size: 16px;
   line-height: 19.5px;
