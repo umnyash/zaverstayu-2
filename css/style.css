@@ -51,7 +51,8 @@
   font-style: italic;
 }
 
-.section-title {
+.section-title,
+.product-categories-name {
   font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 36px;
   line-height: 48px;
@@ -79,4 +80,16 @@
   font-size: 24px;
   line-height: 29.26px;
   font-weight: 500;
+}
+
+.product-categories-list {
+  list-style: none;
+}
+
+.product-categories-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--light-text-color);
+  background-color: var(--dark-text-color);
 }
