@@ -4,3 +4,10 @@
   --button-default: #d89999;
   --contacts-card-bg-color: #f7fafc;
 }
+
+.page-body {
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: var(--dark-text-color);
+}
