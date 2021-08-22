@@ -98,3 +98,15 @@
   color: var(--light-text-color);
   background-color: var(--dark-text-color);
 }
+
+.purchase-instruction-list {
+  list-style: none;
+}
+
+.purchase-instruction-item {
+  text-align: center;
+}
+
+.purchase-instruction-name {
+  font-weight: 500;
+}
