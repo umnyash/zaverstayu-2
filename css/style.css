@@ -128,3 +128,12 @@
   text-decoration: none;
   color: inherit;
 }
+
+.reviews-item {
+  text-align: center;
+}
+
+.reviews-author {
+  font-weight: 500;
+  font-style: normal;
+}
