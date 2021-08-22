@@ -35,7 +35,8 @@
   text-decoration: none;
 }
 
-.about-us {
+.about-us,
+.follow-us {
   font-size: 24px;
   line-height: 29.26px;
 }
@@ -109,4 +110,15 @@
 
 .purchase-instruction-name {
   font-weight: 500;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-link {
+  font-size: 16px;
+  line-height: 19.5px;
+  text-decoration: none;
+  color: inherit;
 }
