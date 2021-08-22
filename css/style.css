@@ -2,7 +2,7 @@
   --light-text-color: #ffffff;
   --dark-text-color: #ae7c78;
   --button-default-color: #d89999;
-  --contacts-card-bg-color: #f7fafc;
+  --contacts-info-bg-color: #f7fafc;
 }
 
 .visually-hidden {
@@ -143,4 +143,18 @@
 .reviews-author {
   font-weight: 500;
   font-style: normal;
+}
+
+.contacts .section-title {
+  text-align: left;
+  letter-spacing: normal;
+}
+
+.contacts-info {
+  background-color: var(--contacts-info-bg-color);
+}
+
+.contacts-item {
+  font-weight: 500;
+  color: inherit;
 }
