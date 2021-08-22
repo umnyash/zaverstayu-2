@@ -20,3 +20,14 @@
   color: inherit;
   text-decoration: none;
 }
+
+.main-title {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 44px;
+  line-height: 58.65px;
+  font-weight: 400;
+}
+
+.main-title span {
+  font-style: italic;
+}
