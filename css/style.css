@@ -57,3 +57,11 @@
   color: var(--light-text-color);
   background-color: var(--button-default-color);
 }
+
+.features-list {
+  list-style: none;
+}
+
+.features-title {
+  font-weight: 500;
+}
