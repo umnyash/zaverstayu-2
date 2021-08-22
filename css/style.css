@@ -26,11 +26,13 @@
   color: var(--dark-text-color);
 }
 
-.site-navigation {
+.site-navigation,
+.footer-navigation {
   list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-link,
+.footer-navigation-link {
   color: inherit;
   text-decoration: none;
 }
