@@ -42,10 +42,53 @@
 
   /* Шапка */
 
+.main-header-nav {
+  position: relative;
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  transform: translateX(-50%);
+}
+
 .site-navigation,
 .footer-navigation {
   list-style: none;
 }
+
+.site-navigation {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 30px;
+}
+
+.site-navigation::after {
+  content: "";
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  min-width: 100px;
+  height: 33px;
+  margin-right: 32px;
+  margin-left: 32px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.site-navigation-item {
+  border: 1px dotted blue;
+  white-space: nowrap;
+}
+
+/*
+.site-navigation-item:nth-child(n+7) {
+  margin-bottom: 10px;
+}
+*/
+
 
 .site-navigation-link,
 .footer-navigation-link {
