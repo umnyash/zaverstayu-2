@@ -63,7 +63,7 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: min-content 1fr repeat(3, min-content) 1fr min-content;
   column-gap: 30px;
 }
 
@@ -80,6 +80,7 @@
 
 .site-navigation-item {
   border: 1px dotted blue;
+  text-align: center;
   white-space: nowrap;
 }
 
