@@ -25,6 +25,7 @@
 
 .page-body {
   display: grid;
+  min-width: 1240px;
   min-height: 100%;
   grid-template-rows: min-content 1ft min-content;
   align-content: start;
