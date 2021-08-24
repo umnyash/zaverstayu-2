@@ -244,5 +244,9 @@
 
 .contacts-item {
   font-weight: 500;
+}
+
+.contacts-link {
+  text-decoration: none;
   color: inherit;
 }
