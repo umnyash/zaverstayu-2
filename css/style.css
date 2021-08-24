@@ -40,7 +40,7 @@
   color: var(--dark-text-color);
 }
 
-  /* Шапка */
+  /* main-header */
 
 .main-header-nav {
   position: relative;
@@ -97,6 +97,8 @@
   text-decoration: none;
 }
 
+  /* about-us */
+
 .about-us,
 .follow-us {
   font-size: 24px;
@@ -131,6 +133,8 @@
   background-color: var(--button-default-color);
 }
 
+  /* features */
+
 .features-list {
   list-style: none;
 }
@@ -139,12 +143,16 @@
   font-weight: 500;
 }
 
+  /* popular-products */
+
 .catalog-name,
 .catalog-price {
   font-size: 24px;
   line-height: 29.26px;
   font-weight: 500;
 }
+
+  /* product-categories */
 
 .product-categories-list {
   list-style: none;
@@ -157,6 +165,8 @@
   color: var(--light-text-color);
   background-color: var(--dark-text-color);
 }
+
+  /* promo */
 
 .promo {
   color: var(--light-text-color);
@@ -171,6 +181,8 @@
   letter-spacing: 0.02em;
 }
 
+  /* purchase-instruction */
+
 .purchase-instruction-list {
   list-style: none;
 }
@@ -182,6 +194,8 @@
 .purchase-instruction-name {
   font-weight: 500;
 }
+
+  /* follow-us */
 
 .follow-us .section-title {
   text-align: left;
@@ -198,6 +212,8 @@
   color: inherit;
 }
 
+  /* reviews */
+
 .reviews-item {
   text-align: center;
 }
@@ -207,10 +223,14 @@
   font-style: normal;
 }
 
+  /* main-footer */
+
 .main-footer {
   color: var(--light-text-color);
   background-color: var(--dark-text-color);
 }
+
+  /* contacts */
 
 .contacts .section-title {
   text-align: left;
