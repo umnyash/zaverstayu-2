@@ -66,7 +66,7 @@
   align-items: center;
   padding: 18px 0 16px;
   margin: 0;
-  list-style: none
+  list-style: none;
 }
 
 .site-navigation-item {
@@ -90,13 +90,6 @@
   display: block;
   padding: 5px 0;
 }
-
-/*
-.site-navigation-item:nth-child(n+7) {
-  margin-bottom: 10px;
-}
-*/
-
 
 .site-navigation-link,
 .footer-navigation-link {
