@@ -71,6 +71,7 @@
 
 .site-navigation-item {
   width: 163px;
+  margin: 5px 0;
 }
 
 .site-navigation-item:nth-child(6n-4) {
@@ -87,8 +88,8 @@
 }
 
 .site-navigation-link {
-  display: block;
-  padding: 5px 0;
+
+
 }
 
 .site-navigation-link,
