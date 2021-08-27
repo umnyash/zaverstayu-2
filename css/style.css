@@ -70,6 +70,7 @@
 }
 
 .site-navigation-item {
+  margin: 6px 0;
   width: 163px;
 }
 
@@ -87,14 +88,26 @@
 }
 
 .site-navigation-link {
-  display: block;
   padding: 5px 0;
+  text-decoration: none;
+  color: inherit;
 }
 
-.site-navigation-link,
-.footer-navigation-link {
-  color: inherit;
-  text-decoration: none;
+.site-navigation-link:hover,
+.site-navigation-link:focus {
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin: -5px -10px;
+  color: var(--light-text-color);
+  background-color: var(--button-default-color);
+}
+
+.site-navigation-link:active {
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin: -5px -10px;
+  color: var(--light-text-color);
+  background-color: var(--dark-text-color);
 }
 
   /* about-us */
@@ -253,4 +266,9 @@
 
 .footer-navigation {
   list-style: none;
+}
+
+.footer-navigation-link {
+  color: inherit;
+  text-decoration: none;
 }
