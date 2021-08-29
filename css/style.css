@@ -142,13 +142,29 @@
 
 .button {
   display: inline-block;
-  padding: 31px 70px 30px 69px;
+  box-sizing: border-box;
+  min-width: 285px;
+  padding: 31px 40px 30px 40px;
   border-radius: 40px;
+  text-align: center;
   font-size: 16px;
   line-height: 19.5px;
   text-decoration: none;
   color: var(--light-text-color);
   background-color: var(--button-default-color);
+}
+
+.button:hover,
+.button:focus {
+  border: 1px solid var(--dark-text-color);
+  color: var(--dark-text-color);
+  background-color: var(--light-text-color);
+}
+
+.button:active {
+  border: 1px solid var(--button-default-color);
+  color: var(--button-default-color);
+  background-color: var(--light-text-color);
 }
 
 .about-us-right {
