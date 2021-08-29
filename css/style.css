@@ -92,6 +92,7 @@
   padding: 5px 0;
   text-decoration: none;
   color: inherit;
+  transition: 120ms;
 }
 
 .site-navigation-link:hover,
@@ -146,6 +147,7 @@
   box-sizing: border-box;
   min-width: 285px;
   padding: 31px 40px 30px 40px;
+  border: 1px solid var(--button-default-color);
   border-radius: 40px;
   text-align: center;
   font-size: 16px;
@@ -153,19 +155,22 @@
   text-decoration: none;
   color: var(--light-text-color);
   background-color: var(--button-default-color);
+  transition: 120ms;
 }
 
 .button:hover,
 .button:focus {
-  border: 1px solid var(--dark-text-color);
+  border-color: var(--dark-text-color);
   color: var(--dark-text-color);
   background-color: var(--light-text-color);
 }
 
 .button:active {
-  border: 1px solid var(--button-default-color);
+  border-color: var(--button-default-color);
+  text-transform: uppercase;
   color: var(--button-default-color);
   background-color: var(--light-text-color);
+  transition: 100ms;
 }
 
 .about-us-right {
@@ -384,16 +389,16 @@
   border-radius: inherit;
   background-color: var(--dark-text-color);
   filter: opacity(0.6);
+  transition: 200ms;
 }
 
 .product-categories-link:hover::after {
   filter: opacity(0.8);
-  transition: 0.2s;
 }
 
 .product-categories-link:active::after {
   filter: opacity(0.9);
-  transition: 0.1s;
+  transition: 100ms;
 }
 
 .product-categories-name {
