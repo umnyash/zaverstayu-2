@@ -1,6 +1,7 @@
 :root {
   --light-text-color: #ffffff;
   --dark-text-color: #ae7c78;
+  --photo-filter: rgba(174, 124, 120, 0.6);
   --button-default-color: #d89999;
   --contacts-info-bg-color: #f7fafc;
   --left-arrow-icon: url("data:image/svg+xml,%3Csvg width='51' height='16' viewBox='0 0 51 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM51 9H1V7H51V9Z' fill='%23AE7C78'/%3E%3C/svg%3E");
@@ -354,64 +355,77 @@
   gap: 30px 20px;
 }
 
-.product-categories-link {
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  min-height: 442px;
-  padding: 48px 20px 40px;
+.product-categories-item {
   border-radius: 10px;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  background-color: var(--dark-text-color);
+}
+
+.product-categories-link {
+  display: grid;
+  border-radius: inherit;
+  align-items: center;
   text-decoration: none;
   color: var(--light-text-color);
-  background-color: var(--dark-text-color);
-  background-size: cover;
 }
 
-.product-categories-item:first-child .product-categories-link {
-  background-image: url("../img/wedding_bouquets.jpg");
-}
-
-.product-categories-item:nth-child(2) .product-categories-link {
-  background-image: url("../img/bouquets_with_peonies.jpg");
-}
-
-.product-categories-item:nth-child(3) .product-categories-link {
-  background-image: url("../img/assorted_bouquets.jpg");
-}
-
-.product-categories-link::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.product-categories-desc {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
   height: 100%;
+  padding: 48px 20px 40px;
   border-radius: inherit;
-  background-color: var(--dark-text-color);
-  filter: opacity(0.6);
-  transition: 200ms;
-}
-
-.product-categories-link:hover::after {
-  filter: opacity(0.8);
-}
-
-.product-categories-link:active::after {
-  filter: opacity(0.9);
-  transition: 100ms;
+  background-color: var(--photo-filter);
 }
 
 .product-categories-name {
   margin: 0 0 9px 0;
-  z-index: 2;
 }
 
 .product-categories-text {
   margin: 0 0 7px 0;
-  z-index: 2;
+  text-align: center;
+}
+
+.product-categories-img {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: inherit;
+  object-fit: contain;
+}
+
+.product-categories-link:hover .product-categories-desc,
+.product-categories-link:focus .product-categories-desc {
+  animation: slide-down 150ms forwards;
+}
+
+.product-categories-link:hover .product-categories-name,
+.product-categories-link:focus .product-categories-name {
+  display: none;
+}
+
+.product-categories-link:active .product-categories-desc {
+  display: none;
+}
+
+@keyframes slide-down {
+  97% {
+    height: 40px;
+  }
+  100% {
+    height: auto;
+    padding: 10px 20px 3px 20px;
+    margin-top: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: var(--dark-text-color);
+  }
 }
 
   /* promo */
