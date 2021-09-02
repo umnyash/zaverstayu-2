@@ -721,6 +721,18 @@
 .contacts-link {
   text-decoration: none;
   color: inherit;
+  transform-origin: left center;
+  transition: 100ms;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  transform: scale(1.15);
+}
+
+.contacts-link:active {
+  color: var(--button-default-color);
+  transform: scale(1.15);
 }
 
 .google-map {
