@@ -403,12 +403,16 @@
 
 .product-categories-link:hover .product-categories-desc,
 .product-categories-link:focus .product-categories-desc {
+  margin-top: auto;
   animation: slide-down 150ms forwards;
 }
 
 .product-categories-link:hover .product-categories-name,
 .product-categories-link:focus .product-categories-name {
-  display: none;
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+  transition: 150ms;
 }
 
 .product-categories-link:active .product-categories-desc {
@@ -422,7 +426,6 @@
   100% {
     height: auto;
     padding: 10px 20px 3px 20px;
-    margin-top: auto;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     background-color: var(--dark-text-color);
