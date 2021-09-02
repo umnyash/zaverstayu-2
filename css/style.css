@@ -771,6 +771,16 @@
   text-decoration: none;
 }
 
+.footer-navigation-link:hover,
+.footer-navigation-link:focus {
+  border-bottom-color: var(--light-text-color);
+}
+
+.footer-navigation-link:active {
+  border-bottom-color: var(--button-default-color);
+  color: var(--button-default-color);
+}
+
 .main-footer .social-list {
   margin-left: 65px;
 }
