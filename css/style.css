@@ -247,15 +247,15 @@
   background-position: 100% 0;
 }
 
-.features-item-delivery::before {
+.features-delivery::before {
   background-image: url("../img/delivery-icon.svg");
 }
 
-.features-item-quality::before {
+.features-quality::before {
   background-image: url("../img/bouquet-icon.svg");
 }
 
-.features-item-photo::before {
+.features-photo::before {
   background-image: url("../img/photo-icon.svg");
 }
 
