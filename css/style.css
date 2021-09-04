@@ -543,7 +543,23 @@
   display: block;
   height: 52px;
   margin-bottom: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.purchase-instruction-order::before {
+  background-image: url("../img/order-icon.svg")
+}
+.purchase-instruction-clarification::before {
+  background-image: url("../img/employee-icon.svg")
+}
+.purchase-instruction-payment::before {
+  background-image: url("../img/payment-icon.svg")
+}
+.purchase-instruction-delivery::before {
+  background-image: url("../img/delivery-icon.svg")
+}
+
 
 .purchase-instruction-name {
   margin: 0 0 8px 0;
