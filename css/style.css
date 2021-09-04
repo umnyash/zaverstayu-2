@@ -237,6 +237,28 @@
   column-gap: 20px;
 }
 
+.features-item::before {
+  content: "";
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  display: block;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.features-item-delivery::before {
+  background-image: url("../img/delivery-icon.svg");
+}
+
+.features-item-quality::before {
+  background-image: url("../img/bouquet-icon.svg");
+}
+
+.features-item-photo::before {
+  background-image: url("../img/photo-icon.svg");
+}
+
 .features-title {
   grid-column: 2 / -1;
   margin: 0 0 8px 0;
