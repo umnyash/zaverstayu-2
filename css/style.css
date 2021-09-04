@@ -691,6 +691,7 @@
   padding: 39px 35px 34px;
   border-radius: 12px;
   margin-top: 52px;
+  margin-bottom: 65px;
   margin-left: calc(50% - 498px); /* (100% - 1200 / 2) + 102 */
   justify-self: start;
   align-self: start;
