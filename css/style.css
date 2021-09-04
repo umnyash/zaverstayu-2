@@ -377,6 +377,7 @@
 .product-categories-link {
   display: grid;
   align-items: center;
+  align-items: stretch;
   text-decoration: none;
   color: var(--light-text-color);
 }
@@ -387,20 +388,30 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   box-sizing: border-box;
-  height: 100%;
-  padding: 48px 20px 40px;
-  background-color: var(--photo-filter);
 }
 
 .product-categories-name {
-  margin: 0 0 9px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 44px 20px 9px;
+  margin: 0;
+  background-color: var(--photo-filter);
 }
 
 .product-categories-text {
-  margin: 0 0 7px 0;
+  padding: 0 20px 7px;
+  margin: 0;
   text-align: center;
+  background-color: var(--photo-filter);
+}
+
+.product-categories-text:last-child {
+  flex-grow: 1;
+  padding-bottom: 43px;
 }
 
 .product-categories-img {
@@ -411,33 +422,36 @@
   object-fit: contain;
 }
 
-.product-categories-link:hover .product-categories-desc,
-.product-categories-link:focus .product-categories-desc {
-  margin-top: auto;
-  animation: slide-down 150ms forwards;
-}
-
 .product-categories-link:hover .product-categories-name,
 .product-categories-link:focus .product-categories-name {
+  flex-grow: 0;
+  padding: 0;
   font-size: 0;
   line-height: 0;
-  margin: 0;
-  transition: 150ms;
+  background-color: var(--dark-text-color);
+  transition: 200ms;
 }
 
-.product-categories-link:active .product-categories-desc {
+.product-categories-link:hover .product-categories-text,
+.product-categories-link:focus .product-categories-text {
+  flex-grow: 0;
+  padding-bottom: 7px;
+  background-color: var(--dark-text-color);
+  transition: 200ms;
+}
+
+.product-categories-link:hover .product-categories-text:first-of-type,
+.product-categories-link:focus .product-categories-text:first-of-type {
+  padding-top: 10px;
+}
+
+.product-categories-link:hover .product-categories-text:last-child,
+.product-categories-link:focus .product-categories-text:last-child {
+  padding-bottom: 10px;
+}
+
+.product-categories-link:active .product-categories-text {
   display: none;
-}
-
-@keyframes slide-down {
-  97% {
-    height: 40px;
-  }
-  100% {
-    height: auto;
-    padding: 10px 20px 3px 20px;
-    background-color: var(--dark-text-color);
-  }
 }
 
   /* promo */
