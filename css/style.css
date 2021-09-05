@@ -872,3 +872,7 @@
   background-color: var(--button-default-color);
   transform: scale(1.5);
 }
+
+.hidden {
+  display: none;
+}
