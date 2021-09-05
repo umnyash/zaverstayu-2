@@ -6,29 +6,28 @@ const buttonNext = slider.querySelector('.slider-button-next');
 let productsTotal = products.length;
 let currentSlideNumber = 1;
 
-const changeSlide = function() {
-  console.log(currentSlideNumber);
+const toggleHideSlide = function() {
   products[currentSlideNumber - 1].classList.toggle('hidden');
 }
 
 buttonPrev.addEventListener('click', function() {
-  changeSlide();
+  toggleHideSlide();
 
   if (currentSlideNumber === 1) {
     currentSlideNumber = productsTotal;
   } else {
     currentSlideNumber--;
   }
-  changeSlide();
+  toggleHideSlide();
 });
 
 buttonNext.addEventListener('click', function() {
-  changeSlide();
+  toggleHideSlide();
 
   if (currentSlideNumber === productsTotal) {
     currentSlideNumber = 1;
   } else {
     currentSlideNumber++;
   }
-  changeSlide();
+  toggleHideSlide();
 });
