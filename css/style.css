@@ -162,7 +162,7 @@
   text-decoration: none;
   color: var(--light-text-color);
   background-color: var(--button-default-color);
-  transition: 300ms;
+  transition: 250ms;
 }
 
 .button:hover,
