@@ -743,7 +743,7 @@
   border-radius: 12px;
   margin-top: 52px;
   margin-bottom: 65px;
-  margin-left: calc(50% - 498px); /* (100% - 1200 / 2) + 102 */
+  margin-left: calc(50% - 543px); /* (100% - 1200 / 2) + 57px */
   justify-self: start;
   align-self: start;
   color: var(--dark-text-color);
