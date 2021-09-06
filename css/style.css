@@ -3,6 +3,7 @@
   --dark-text-color: #ae7c78;
   --button-default-color: #d89999;
   --contacts-info-bg-color: #f7fafc;
+  --contacts-info-shadow-color: rgba(217, 217, 217, 0.3);
   --photo-filter: rgba(174, 124, 120, 0.6);
   --left-arrow-icon: url("data:image/svg+xml,%3Csvg width='51' height='16' viewBox='0 0 51 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM51 9H1V7H51V9Z' fill='%23AE7C78'/%3E%3C/svg%3E");
   --right-arrow-icon: url("data:image/svg+xml,%3Csvg width='51' height='16' viewBox='0 0 51 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z' fill='%23AE7C78'/%3E%3C/svg%3E");
@@ -747,6 +748,7 @@
   align-self: start;
   color: var(--dark-text-color);
   background-color: var(--contacts-info-bg-color);
+  filter: drop-shadow(0px 4px 40px var(--contacts-info-shadow-color));
 }
 
 .contacts .section-title {
