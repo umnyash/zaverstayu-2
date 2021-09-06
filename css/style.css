@@ -99,7 +99,7 @@
   padding: 5px 0;
   text-decoration: none;
   color: inherit;
-  transition: 120ms;
+  transition: 150ms;
 }
 
 .site-navigation-link:hover,
@@ -162,7 +162,7 @@
   text-decoration: none;
   color: var(--light-text-color);
   background-color: var(--button-default-color);
-  transition: 120ms;
+  transition: 300ms;
 }
 
 .button:hover,
@@ -452,7 +452,7 @@
   font-size: 0;
   line-height: 0;
   background-color: var(--dark-text-color);
-  transition: 200ms;
+  transition: 400ms;
 }
 
 .product-categories-link:hover .product-categories-text,
@@ -460,7 +460,7 @@
   flex-grow: 0;
   padding-bottom: 7px;
   background-color: var(--dark-text-color);
-  transition: 200ms;
+  transition: 400ms;
 }
 
 .product-categories-link:hover .product-categories-text:first-of-type,
@@ -788,7 +788,7 @@
   text-decoration: none;
   color: inherit;
   transform-origin: left center;
-  transition: 100ms;
+  transition: 150ms;
 }
 
 .contacts-link:hover,
@@ -849,7 +849,7 @@
   border-bottom: 1px solid transparent;
   color: inherit;
   text-decoration: none;
-  transition: 300ms;
+  transition: 250ms;
 }
 
 .footer-navigation-link:hover,
