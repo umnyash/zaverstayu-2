@@ -468,7 +468,7 @@
   font-size: 0;
   line-height: 0;
   background-color: var(--dark-text-color);
-  transition: 400ms;
+  transition: 300ms;
 }
 
 .product-categories-link:hover .product-categories-text,
@@ -476,7 +476,7 @@
   flex-grow: 0;
   padding-bottom: 7px;
   background-color: var(--dark-text-color);
-  transition: 400ms;
+  transition: 300ms;
 }
 
 .product-categories-link:hover .product-categories-text:first-of-type,
