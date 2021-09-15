@@ -761,7 +761,7 @@
   border-radius: 12px;
   margin-top: 52px;
   margin-bottom: 65px;
-  margin-left: calc(50% - 543px); /* (100% - 1200 / 2) + 57px */
+  margin-left: calc(50% - 499px); /* (100% - 1200 / 2) + 101px */
   justify-self: start;
   align-self: start;
   color: var(--dark-text-color);
