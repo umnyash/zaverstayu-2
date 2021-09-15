@@ -822,8 +822,9 @@
 .google-map {
   z-index: 2;
   display: block;
-  width: 100%;
+  width: calc(100% + 700px);
   height: 100%;
+  margin-left: -350px;
   border: none;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
