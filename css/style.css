@@ -104,7 +104,10 @@
 }
 
 .site-navigation-link {
-  padding: 5px 0;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin-right: -10px;
+  margin-left: -10px;
   text-decoration: none;
   color: inherit;
   transition: 150ms;
@@ -112,17 +115,11 @@
 
 .site-navigation-link:hover,
 .site-navigation-link:focus {
-  padding: 5px 10px;
-  border-radius: 7px;
-  margin: -5px -10px;
   color: var(--light-text-color);
   background-color: var(--button-default-color);
 }
 
 .site-navigation-link:active {
-  padding: 5px 10px;
-  border-radius: 7px;
-  margin: -5px -10px;
   color: var(--light-text-color);
   background-color: var(--dark-text-color);
 }
